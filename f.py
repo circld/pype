@@ -62,7 +62,7 @@ def main(args):
     level = logging.DEBUG if args.verbose else logging.INFO
     logging.basicConfig(
         level=level,
-        format="[%(levelname)s] %(filename)s:%(funcName)s (line %(lineno)s)",
+        format="[%(levelname)s] %(filename)s:%(funcName)s (line %(lineno)s) %(message)s",
     )
 
     logging.debug(args)
